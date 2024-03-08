@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dungeons Adventure</title>
+</head>
+<body class="h-screen bodyWarrior">
+
+    <nav class="flex flex-wrap justify-center items-center h-[10%] border-b-2 border-amber-500">
+        <div class=" w-1/3 pl-8 text-4xl text-amber-500"><img class="xl:w-28 2xl:w-44" src="../assets/images/DungeonsLogo.png" alt=""></div>
+        <ul class="flex flex-wrap justify-between gap-7 pt-4 w-1/3 xl:text-3xl 2xl:text-5xl text-amber-500">
+            <li><a href="index.html">Home</a></li> <p>-</p>
+            <li><a href="#">Contact</a></li><p>-</p>
+            <li><a href="#">Help</a></li><p></p>
+        </ul>
+        <div class="flex flex-wrap justify-end w-1/3 pr-8 xl:text-3xl 2xl:text-5xl text-amber-500">
+            <button class=" "><p>Login</p></button>
+            <p>/</p>
+            <button class=" "><p>Logout</p></button>
+        </div>
+    </nav>
+
+    <main class="flex w-full p-4 h-[85%]">
+        <div class="felx flex-col w-1/3 h-full border-r-2 border-amber-500 ">
+            <div class="flex justify-center items-center h-[17%] gap-2 ">
+                <div class="flex xl:h-24 xl:w-24 2xl:h-32 2xl:w-32 border-2 border-amber-500"><img id="fire" draggable="true" src="../assets/images/fireSword.jpg" alt="" /></div>
+                <div class="flex xl:h-24 xl:w-24 2xl:h-32 2xl:w-32 border-2 border-amber-500"><img id="thunder" draggable="true" src="../assets/images/thunderHamer.jpg" alt="" /></div>
+                <div class="flex xl:h-24 xl:w-24 2xl:h-32 2xl:w-32 border-2 border-amber-500"><img id="dark"  draggable="true" src="../assets/images/blackSword.jpg" alt="" /></div>
+                <div class="flex xl:h-24 xl:w-24 2xl:h-32 2xl:w-32 border-2 border-amber-500"><img id="celestial" draggable="true" src="../assets/images/celestialSword.jpg" alt="" /></div>
+            </div>
+            <div class="flex justify-center h-[75%]  mt-6">
+                <img class="warrior h-full border-2 border-amber-500 " draggable="true"src="../assets/images/warrior4.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- contenedor historia -->
+        <div class="w-2/3 h-full border-amber-500 p-4 ">
+
+            <div class="flex justify-center gap-2 ">
+                <div id="containerAttack" class="flex xl:h-24 xl:w-24 2xl:h-32 2xl:w-32 border-2 border-amber-500"> <!--Aquí dentro la imagen drop--></div>
+            </div>
+
+            <div class="flex flex-row  h-auto pt-4">
+               <div class="story-container h-full flex w-2/3 border-2 border-amber-500 bg-black/60 p-4">
+                   <!--Aquí dentro la story-->
+                </div>
+
+                <div class="flex img-container justify-center pl-4 w-1/3 h-[100%] ">
+                    <!--Aquí dentro la img del enemy-->
+                </div>
+
+            </div>
+        </div>
+
+        <div class="confirmation-div story-div  flex absolute justify-center items-center h-screen w-screen bg-black/80 backdrop-blur-sm">
+            <div class="flex flex-col justify-center story-box w-[60%]  text-amber-500 xl:text-xl 2xl:text-3xl  border-2 border-amber-500 p-8 ">
+                <div class="flex w-full h-4/6 ">
+                    <p class="flex xl:text-lg 2xl:text-3xl text-justify ">Desde las lejanas y heladas montañas de Eldgron emerge la leyenda de un guerrero solitario, Varik, cuya armadura oscura y cuernos en el casco inspiran tanto temor como admiración. Aquellos que han sido lo suficientemente afortunados para verlo y contar la historia aseguran haber contemplado al mismísimo demonio encarnado en su figura.
+                        <br>
+                        <br>
+                    Varik ha sido testigo de las señales ominosas que perturban la armonía de la naturaleza: los animales intranquilos, los días cada vez más oscuros. Consciente de que algo terrible se avecina, observa desde la montaña más alta del Eldgron el castillo del rey se cierne sobre una densa oscuridad. Sin dudarlo, emprende su viaje hacia el reino, sin sospechar siquiera que lo que una vez fue su hogar también está siendo amenazado por fuerzas desconocidas, una maldad que se origina en las profundidades mismas del inframundo.</p>
+                </div>
+                <div class="flex justify-center items-center w-full h-2/6 ">
+                    <button id="confirm-no" class="golden-text golden-button text-xl w-24 text-black">Start</button>
+                </div>
+                
+            </div>
+        </div>
+            
+    </main>
+
+    <footer class="flex justify-center items-center h-[5%] text-amber-500 border-t-2 border-amber-500">
+        <h1 class="xl:text-2xl 2xl:text-4xl text-amber-500 ">© Dungeons Adventure</h1>
+    </footer>
+<script src="warriorBattle.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

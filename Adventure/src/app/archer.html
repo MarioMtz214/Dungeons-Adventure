@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dungeons Adventure</title>
+</head>
+<body class="h-screen bodyArcher">
+
+    <nav class="flex flex-wrap justify-center items-center h-[10%] border-b-2 border-amber-500">
+        <div class=" w-1/3 pl-8 text-4xl text-amber-500"><img class="xl:w-28 2xl:w-44" src="../assets/images/DungeonsLogo.png" alt=""></div>
+        <ul class="flex flex-wrap justify-between gap-7 pt-4 w-1/3 xl:text-3xl 2xl:text-5xl text-amber-500">
+            <li><a href="index.html">Home</a></li> <p>-</p>
+            <li><a href="#">Contact</a></li><p>-</p>
+            <li><a href="#">Help</a></li><p></p>
+        </ul>
+        <div class="flex flex-wrap justify-end w-1/3 pr-8 xl:text-3xl 2xl:text-5xl text-amber-500">
+            <button class=" "><p>Login</p></button>
+            <p>/</p>
+            <button class=" "><p>Logout</p></button>
+        </div>
+    </nav>
+
+    <main class="flex w-full p-4 h-[85%]">
+        <div class="felx flex-col w-1/3 h-full border-r-2 border-amber-500 ">
+            <div class="flex justify-center items-center h-[17%] gap-2 ">
+                <div class="flex xl:h-24 xl:w-24 2xl:h-32 2xl:w-32 border-2 border-amber-500"><img id="fire" draggable="true" src="../assets/images/fireArrow.jpg" alt="" /></div>
+                <div class="flex xl:h-24 xl:w-24 2xl:h-32 2xl:w-32 border-2 border-amber-500"><img id="ice" draggable="true" src="../assets/images/iceArrow.jpg" alt="" /></div>
+                <div class="flex xl:h-24 xl:w-24 2xl:h-32 2xl:w-32 border-2 border-amber-500"><img id="light"  draggable="true" src="../assets/images/lightArcher.jpg" alt="" /></div>
+                <div class="flex xl:h-24 xl:w-24 2xl:h-32 2xl:w-32 border-2 border-amber-500"><img id="lightning" draggable="true" src="../assets/images/electricArrow.jpg" alt="" /></div>
+            </div>
+            <div class="flex justify-center h-[75%]  mt-6">
+                <img class="archer h-full border-2 border-amber-500 " draggable="true"src="../assets/images/archer3.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- contenedor historia -->
+        <div class="w-2/3 h-full border-amber-500 p-4 ">
+
+            <div class="flex justify-center gap-2 ">
+                <div id="containerAttack" class="flex xl:h-24 xl:w-24 2xl:h-32 2xl:w-32 border-2 border-amber-500"> <!--Aquí dentro la imagen drop--></div>
+            </div>
+
+            <div class="flex flex-row  h-auto pt-4">
+               <div class="story-container h-full flex w-2/3 border-2 border-amber-500 bg-black/60 p-4">
+                    <!--Aquí dentro la story-->
+                </div>
+
+                <div class="flex img-container justify-center pl-4 w-1/3 h-[100%] ">
+                    <!--Aquí dentro la img del enemy-->
+                </div>
+
+            </div>
+        </div>
+
+        <div class="confirmation-div story-div  flex absolute justify-center items-center h-screen w-screen bg-black/80 backdrop-blur-sm">
+            <div class="flex flex-col justify-center story-box w-[50%]  text-amber-500 xl:text-xl 2xl:text-3xl  border-2 border-amber-500 p-8 ">
+                <div class="flex w-full h-4/6 ">
+                    <p class="flex xl:text-lg 2xl:text-3xl text-justify ">Cuando el rey y su familia fueron asediados por un gran dragón y el reino se vio rendido a las sombras y sus demonios, solo una joven y bella arquera, llamada Ymir, proveniente del mundo de la luz, tuvo el valor y coraje de iniciar un viaje ante el peligro del Bosque Muerto. Su misión: salvar al rey y su familia, con el fin de restaurar la paz en el mundo de los hombres. Sin embargo, Ymir desconoce los peligros que aguardan en la profundidad del Bosque Muerto, donde la oscuridad se cierne como un manto y los susurros de las sombras ocultan secretos antiguos y terrores inimaginables.</p>
+                </div>
+                <div class="flex justify-center items-center w-full h-2/6 ">
+                    <button id="confirm-no" class="golden-text golden-button text-xl w-24 text-black">Start</button>
+                </div>
+                
+            </div>
+        </div>
+            
+    </main>
+
+    <footer class="flex justify-center items-center h-[5%] text-amber-500 border-t-2 border-amber-500">
+        <h1 class="xl:text-2xl 2xl:text-4xl text-amber-500 ">© Dungeons Adventure</h1>
+    </footer>
+<script src="archerBattle.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
